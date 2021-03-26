@@ -1,0 +1,17 @@
+birthdays = {'ala': ' 1 kwiet', 'zosia': '2 maj', 'lola': '3 wrze'}
+
+while True:
+    print('podaj imie: (pozostaw pusty by zakonczyc program)')
+    name = input()
+    if name == '':
+        break
+
+    if name in birthdays:
+        print(birthdays[name] + ' to dzien urodzinin osoby o imieniu ' + name + '.')
+
+    else:
+        print('nie znaleziono info o urodzinach osoby o imieniu ' + name + '.')
+        print('kiedy przypadja te urodziny?')
+        bday = input()
+        birthdays[name] = bday
+        print('baza danych urodzin została uaktualniona')
