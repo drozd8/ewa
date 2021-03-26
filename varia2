@@ -1,0 +1,7 @@
+myPets = ['bury', 'rudy', 'czarny']
+print('podaj imie zierzaka: ')
+name = input()
+if name not in myPets:
+    print('nie mam zwierzka o imieniu: ' + name + '.')
+else:
+    print(name + ' to mój zwierzak')
